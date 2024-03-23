@@ -26,6 +26,9 @@ export default function CommunityNavigator() {
         <Link to="/addfriend" type="button" className="btn">
           친구추가
         </Link>
+        <Link to="/band" type="button" className="btn">
+          밴드
+        </Link>
       </nav>
       <div className="navbarcustom"></div>
     </>
