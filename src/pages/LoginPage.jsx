@@ -41,7 +41,7 @@ export default function LoginPage() {
                 <hr className="my-4" />
                 <h2 className="text-lg font-bold mb-3">SNS 로그인</h2>
                 <button
-                  className="w-full py-2 mb-2 btn btn-outline-secondary rounded-md"
+                  className="w-full py-2 mb-2 btn btn-outline-success rounded-md"
                   type="submit"
                 >
                   네이버 로그인
