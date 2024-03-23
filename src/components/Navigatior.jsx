@@ -1,5 +1,5 @@
-import { Link, useNavigate } from "react-router-dom";
-import { useAuth } from "./AutoContext";
+import { Link /*, useNavigate*/ } from "react-router-dom";
+/*import { useAuth } from "./AutoContext";*/
 
 export default function Navigator() {
   /*const navigate = useNavigate();
