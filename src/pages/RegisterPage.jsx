@@ -1,4 +1,36 @@
+import React from "react";
+import axios from "axios";
+
 export default function RegisterPage() {
+  const handleSubmit = async (event) => {
+    event.preventDefault(); // 폼 제출 기본 동작 방지
+
+    // 폼 데이터 수집
+    const formData = new FormData(event.target);
+    const data = {};
+    formData.forEach((value, key) => {
+      data[key] = value;
+    });
+
+    try {
+      // POST 요청 보내기
+      const response = await axios.post(
+        "http://ec2-3-234-216-153.compute-1.amazonaws.com:5000/",
+        data
+      );
+      console.log("회원가입 성공:", response.data);
+      // 회원가입 후 어떤 동작을 수행하고 싶다면 여기에 추가
+    } catch (error) {
+      console.error("회원가입 오류:", error);
+    }
+  };
+
+  const handleSNSRegister = (provider) => {
+    // 각 SNS 제공자에 따른 회원가입 동작을 수행
+    console.log(provider, "회원가입");
+    // 추가적인 작업을 수행하고 싶다면 여기에 추가
+  };
+
   return (
     <>
       <div
@@ -14,7 +46,7 @@ export default function RegisterPage() {
             </div>
 
             <div className="modal-body p-5 pt-0">
-              <form className="">
+              <form onSubmit={handleSubmit}>
                 <div className="form-floating mb-3">
                   <input
                     type="text"
@@ -52,19 +84,19 @@ export default function RegisterPage() {
                 <h2 className="text-lg font-bold mb-3">SNS 로그인</h2>
                 <button
                   className="w-full py-2 mb-2 btn btn-outline-success rounded-md"
-                  type="submit"
+                  onClick={() => handleSNSRegister("네이버")}
                 >
                   네이버 회원가입
                 </button>
                 <button
                   className="w-full py-2 mb-2 btn btn-outline-primary rounded-md"
-                  type="submit"
+                  onClick={() => handleSNSRegister("구글")}
                 >
                   구글 회원가입
                 </button>
                 <button
                   className="w-full py-2 mb-2 btn btn-outline-secondary rounded-md"
-                  type="submit"
+                  onClick={() => handleSNSRegister("깃허브")}
                 >
                   깃허브 회원가입
                 </button>
