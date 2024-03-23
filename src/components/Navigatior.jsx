@@ -5,14 +5,14 @@ export default function Navigator() {
   const navigate = useNavigate();
   const auth = useAuth(); // Use auth directly without destructuring
 
-  const handleMyPageClick = (event) => {
+  /*const handleMyPageClick = (event) => {
     if (!auth || !auth.isLoggedIn) {
       // Check auth and isLoggedIn
       event.preventDefault(); // Prevent link navigation
       alert("로그인이 필요한 페이지입니다. 로그인 페이지로 이동합니다.");
       navigate("/login"); // Redirect to login page programmatically
     }
-  };
+  };*/
 
   return (
     <>
