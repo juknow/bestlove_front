@@ -1,22 +1,56 @@
+import CommentCard from "../components/CommentCard";
+
+const commentData = [
+  { id: 1, title: "첫 번째 카드", content: "첫 번째 카드 내용입니다." },
+  { id: 2, title: "두 번째 카드", content: "두 번째 카드 내용입니다." },
+  { id: 3, title: "세 번째 카드", content: "세 번째 카드 내용입니다." },
+];
+
 export default function ReadPost() {
   return (
     <>
-      <h1>게시물 제목</h1>
-      <p>게시물 본문 내용...</p>
+      <div
+        className="modal modal-sheet position-static block bg-body-secondary p-4 py-md-5"
+        tabIndex="-1"
+        role="dialog"
+        id="modalSignin"
+      >
+        <div className="modal-dialog" role="document">
+          <div className="modal-content rounded-4 shadow">
+            <div className="modal-header p-5 pb-4 border-b-0">
+              <h1 className="font-bold mb-0 text-2xl">본문 제목</h1>
+            </div>
 
-
-      <h2>댓글</h2>
-      <ul>
-        <li>댓글1</li>
-        <li>댓글2</li>
-        <li>댓글3</li>
-      </ul>
-
-      <form>
-        <label htmlFor="comment">댓글 작성:</label><br />
-        <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br />
-        <input type="submit" value="댓글 등록" />
-      </form>
+            <div className="modal-body p-5 pt-0">
+              <p className="text-left mb-0">
+                본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문
+              </p>
+              <hr className="my-4" />
+              {commentData.map((item) => (
+                <CommentCard key={item.id} title={item.title} content={item.content} />
+              ))}
+              <form className="">
+                <div className="form-floating mb-3">
+                  <textarea
+                    name="commentwrite"
+                    placeholder="댓글 작성"
+                    required
+                    className="form-control rounded-md"
+                    style={{ height: "100px" }}
+                  ></textarea>
+                  <label htmlFor="댓글 작성">댓글 작성</label>
+                </div>
+                <button
+                  className="w-full py-2 mb-2 btn btn-outline-primary rounded-md"
+                  type="submit"
+                >
+                  댓글 작성
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
