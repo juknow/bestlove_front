@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <header>내 연애를 도와줘</header>
+        <header>내 연애를 구해줘</header>
         <Navigator />
         <div style={{ height: 8 }}></div>
         <Routes>

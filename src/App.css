@@ -37,3 +37,9 @@ header {
   text-overflow: ellipsis;
   color: gainsboro;
 }
+
+.btn-custom {
+  padding: 10px 20px; /* Larger padding */
+  font-size: 18px; /* Larger font size */
+  margin: 5px; /* Add some space around the buttons */
+}
