@@ -27,5 +27,6 @@ header {
   font: inherit;
   text-align: inherit;
   cursor: pointer;
+  text-decoration: none;
   /* 기타 원하는 초기화 스타일 추가 */
 }
