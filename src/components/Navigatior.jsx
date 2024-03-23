@@ -2,8 +2,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "./AutoContext";
 
 export default function Navigator() {
-  const navigate = useNavigate();
-  const auth = useAuth(); // Use auth directly without destructuring
+  /*const navigate = useNavigate();
+  const auth = useAuth(); // Use auth directly without destructuring*/
 
   /*const handleMyPageClick = (event) => {
     if (!auth || !auth.isLoggedIn) {
@@ -27,7 +27,7 @@ export default function Navigator() {
         <Link to="/login" type="button" className="btn btn-custom">
           로그인
         </Link>
-        <Link to="/mypage" type="button" className="btn btn-custom" onClick={handleMyPageClick}>
+        <Link to="/mypage" type="button" className="btn btn-custom" /*onClick={handleMyPageClick}*/>
           마이페이지
         </Link>
         <Link to="/community" type="button" className="btn btn-custom">
