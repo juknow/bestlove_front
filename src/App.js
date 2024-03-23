@@ -1,23 +1,25 @@
-import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import MyPage from './pages/MyPage';
-import MainPage from './pages/MainPage';
-import NotFound from './pages/NotFound';
-
-
-import LoginPage from './pages/LoginPage';
-import RegisterPage from './pages/RegisterPage';
-import AddFriend from './pages/AddFriend';
-import SetCouple from './pages/SetCouple';
-import CommunityPage from './pages/CommunityPage';
-import CreatePost from './pages/CreatePost';
-import ReadPost from './pages/ReadPost';
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MyPage from "./pages/MyPage";
+import MainPage from "./pages/MainPage";
+import NotFound from "./pages/NotFound";
+import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage";
+import AddFriend from "./pages/AddFriend";
+import SetCouple from "./pages/SetCouple";
+import CommunityPage from "./pages/CommunityPage";
+import CreatePost from "./pages/CreatePost";
+import ReadPost from "./pages/ReadPost";
+import Navigator from "./components/Navigatior";
 
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <header>베프의 연애</header>
+        <Navigator />
+        <div style={{ height: 8 }}></div>
         <Routes>
           <Route path="/" element={<MainPage />}></Route>
           <Route path="/mypage/*" element={<MyPage />}></Route>

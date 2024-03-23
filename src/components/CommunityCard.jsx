@@ -6,12 +6,13 @@ export default function CommunityCard() {
   };
   return (
     <>
-      <button className="card w-75 mb-3 btn btn-light" onClick={handleClick}>
+      <button className="card w-[80%] mb-3 btn btn-light" onClick={handleClick}>
         <div className="card-body">
           <h5 className="card-title text-start">여자친구가 화났어요</h5>
           <p className="text-start line-clamp-1 text-gray-400 w-[95%]">
             ssdasdsgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggdsadsafagggggggggggggggggggggggggggggggggggg
           </p>
+          <p className="text-start">작성자 : 류희철</p>
         </div>
       </button>
     </>
