@@ -15,7 +15,7 @@ export default function RegisterPage() {
     try {
       // POST 요청 보내기
       const response = await axios.post(
-        "http://ec2-3-234-216-153.compute-1.amazonaws.com:5000/",
+        "http://ec2-3-234-216-153.compute-1.amazonaws.com:5000/api/register",
         data
       );
       console.log("회원가입 성공:", response.data);
