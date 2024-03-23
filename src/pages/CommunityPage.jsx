@@ -1,5 +1,4 @@
 import CommunityCard from "../components/CommunityCard";
-import Navigator from "../components/Navigatior";
 
 const communityData = [
   { id: 1, title: "첫 번째 카드", content: "첫 번째 카드 내용입니다." },
@@ -10,10 +9,7 @@ const communityData = [
 export default function CommunityPage() {
   return (
     <>
-      <header>커뮤니티</header>
-      <Navigator />
-      <div style={{ height: 8 }}></div>
-      <div className="container flex-column d-flex align-items-center">
+      <div className="container flex-column d-flex align-items-center w-screen">
         {communityData.map((item) => (
           <CommunityCard key={item.id} title={item.title} content={item.content} />
         ))}
