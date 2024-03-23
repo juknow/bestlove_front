@@ -14,10 +14,12 @@ export default function RegisterPage() {
 
     try {
       // POST 요청 보내기
-      const response = await axios.post(
-        "http://ec2-3-234-216-153.compute-1.amazonaws.com:5000/api/register",
-        data
-      );
+      const response = await axios
+        .create({
+          baseURL: "http://ec2-3-234-216-153.compute-1.amazonaws.com:5000/api",
+          withCredentials: true,
+        })
+        .post("/register", data);
       console.log("회원가입 성공:", response.data);
       // 회원가입 후 어떤 동작을 수행하고 싶다면 여기에 추가
     } catch (error) {
