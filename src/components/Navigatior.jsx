@@ -20,7 +20,7 @@ export default function CommunityNavigator() {
         <Link to="/community" type="button" className="btn">
           커뮤니티
         </Link>
-        <Link to="/community" type="button" className="btn">
+        <Link to="/post" type="button" className="btn">
           글 작성하기
         </Link>
         <Link to="/addfriend" type="button" className="btn">

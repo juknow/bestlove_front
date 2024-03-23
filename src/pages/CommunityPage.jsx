@@ -9,6 +9,7 @@ const communityData = [
 export default function CommunityPage() {
   return (
     <>
+      <div className="h-3"></div>
       <div className="container flex-column d-flex align-items-center w-screen">
         {communityData.map((item) => (
           <CommunityCard key={item.id} title={item.title} content={item.content} />
