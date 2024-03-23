@@ -13,6 +13,7 @@ import ReadPost from "./pages/ReadPost";
 import Navigator from "./components/Navigatior";
 import BandPage from "./pages/BandPage";
 import ReadBand from "./pages/ReadBand";
+import CreateBand from "./pages/CreateBand";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route path="/mypage/*" element={<MyPage />}></Route>
           <Route path="/band/*" element={<BandPage />}></Route>
           <Route path="/readband/*" element={<ReadBand />}></Route>
+          <Route path="/createband/*" element={<CreateBand />}></Route>
           {/* 상단에 위치하는 라우트들의 규칙을 모두 확인, 일치하는 라우트가 없는경우 처리 */}
           <Route path="*" element={<NotFound />}></Route>
         </Routes>

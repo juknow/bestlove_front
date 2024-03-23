@@ -23,11 +23,14 @@ export default function CommunityNavigator() {
         <Link to="/post" type="button" className="btn btn-custom">
           글 작성하기
         </Link>
-        <Link to="/addfriend" type="button" className="btn btn-custom">
-          친구추가
+        <Link to="/setcouple" type="button" className="btn btn-custom">
+          연인 등록
         </Link>
         <Link to="/band" type="button" className="btn btn-custom">
           밴드
+        </Link>
+        <Link to="/createband" type="button" className="btn btn-custom">
+          밴드 생성
         </Link>
       </nav>
       <div className="navbarcustom"></div>
