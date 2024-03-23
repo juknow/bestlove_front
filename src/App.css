@@ -8,9 +8,9 @@ header {
   font-weight: 600;
 }
 
-.navbar {
+.navbarcustom {
   background-color: gainsboro;
-  height: 3px;
+  height: 4px;
 
   margin: 3px;
 }
@@ -29,4 +29,11 @@ header {
   cursor: pointer;
   text-decoration: none;
   /* 기타 원하는 초기화 스타일 추가 */
+}
+
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: gainsboro;
 }
