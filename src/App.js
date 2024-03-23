@@ -1,14 +1,15 @@
-import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import MyPage from "./pages/MyPage";
-import MainPage from "./pages/MainPage";
-import NotFound from "./pages/NotFound";
+import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import MyPage from './pages/MyPage';
+import MainPage from './pages/MainPage';
+import NotFound from './pages/NotFound';
 
-import LoginPage from "./pages/LoginPage";
-import RegisterPage from "./pages/RegisterPage";
-import AddFriend from "./pages/AddFriend";
-import SetCouple from "./pages/SetCouple";
-import Community from "./pages/Community";
+import LoginPage from './pages/LoginPage';
+import RegisterPage from './pages/RegisterPage';
+import AddFriend from './pages/AddFriend';
+import SetCouple from './pages/SetCouple';
+import Community from './pages/Community';
+import CreatePost from './pages/CreatePost';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/addfriend/*" element={<AddFriend />}></Route>
           <Route path="/setcouple/*" element={<SetCouple />}></Route>
           <Route path="/community/*" element={<Community />}></Route>
+          <Route path="/post/*" element={<CreatePost />}></Route>
           {/* 상단에 위치하는 라우트들의 규칙을 모두 확인, 일치하는 라우트가 없는경우 처리 */}
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
