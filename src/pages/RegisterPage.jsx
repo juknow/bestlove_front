@@ -1,6 +1,78 @@
 export default function RegisterPage() {
   return (
     <>
+      <div
+        className="modal modal-sheet position-static block bg-body-secondary p-4 py-md-5"
+        tabIndex="-1"
+        role="dialog"
+        id="modalSignin"
+      >
+        <div className="modal-dialog" role="document">
+          <div className="modal-content rounded-4 shadow">
+            <div className="modal-header p-5 pb-4 border-b-0">
+              <h1 className="font-bold mb-0 text-2xl">회원가입</h1>
+            </div>
+
+            <div className="modal-body p-5 pt-0">
+              <form className="">
+                <div className="form-floating mb-3">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="이름"
+                    required
+                    className="form-control rounded-md"
+                  />
+                  <label htmlFor="이름">이름</label>
+                </div>
+                <div className="form-floating mb-3">
+                  <input
+                    type="text"
+                    name="username"
+                    placeholder="ID"
+                    required
+                    className="form-control rounded-md"
+                  />
+                  <label htmlFor="ID">ID</label>
+                </div>
+                <div className="form-floating mb-3">
+                  <input
+                    type="password"
+                    name="password"
+                    placeholder="Password"
+                    required
+                    className="form-control rounded-md"
+                  />
+                  <label htmlFor="Password">Password</label>
+                </div>
+                <button className="w-full mb-2 btn btn-lg rounded-md btn-primary" type="submit">
+                  회원 가입
+                </button>
+                <hr className="my-4" />
+                <h2 className="text-lg font-bold mb-3">SNS 로그인</h2>
+                <button
+                  className="w-full py-2 mb-2 btn btn-outline-secondary rounded-md"
+                  type="submit"
+                >
+                  네이버 회원가입
+                </button>
+                <button
+                  className="w-full py-2 mb-2 btn btn-outline-primary rounded-md"
+                  type="submit"
+                >
+                  구글 회원가입
+                </button>
+                <button
+                  className="w-full py-2 mb-2 btn btn-outline-secondary rounded-md"
+                  type="submit"
+                >
+                  깃허브 회원가입
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="container flex-column d-flex align-items-center w-screen">
         <h2 className="text-3xl">회원 가입</h2>
 
@@ -9,12 +81,24 @@ export default function RegisterPage() {
         <form action="#" method="post">
           <div className="mb-3">
             <div>이름</div>
-            <input type="text" name="name" placeholder="이름" required className="form-control" />
+            <input
+              type="text"
+              name="name"
+              placeholder="이름"
+              required
+              className="form-control rounded-md"
+            />
           </div>
 
           <div className="mb-3">
             <div>아이디</div>
-            <input type="text" name="username" placeholder="ID" required className="form-control" />
+            <input
+              type="text"
+              name="username"
+              placeholder="ID"
+              required
+              className="form-control rounded-md"
+            />
           </div>
 
           <div className="mb-3">
@@ -24,7 +108,7 @@ export default function RegisterPage() {
               name="password"
               placeholder="Password"
               required
-              className="form-control"
+              className="form-control rounded-md"
             />
           </div>
 
