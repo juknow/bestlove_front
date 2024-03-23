@@ -52,7 +52,7 @@ export default function RegisterPage() {
                 <div className="form-floating mb-3">
                   <input
                     type="text"
-                    name="name"
+                    name="username"
                     placeholder="이름"
                     required
                     className="form-control rounded-md"
@@ -62,7 +62,7 @@ export default function RegisterPage() {
                 <div className="form-floating mb-3">
                   <input
                     type="text"
-                    name="username"
+                    name="id"
                     placeholder="ID"
                     required
                     className="form-control rounded-md"
