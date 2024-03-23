@@ -18,12 +18,12 @@ export default function ReadPost() {
         <div className="modal-dialog" role="document">
           <div className="modal-content rounded-4 shadow">
             <div className="modal-header p-5 pb-4 border-b-0">
-              <h1 className="font-bold mb-0 text-2xl">본문 제목</h1>
+              <h1 className="font-bold mb-0 text-2xl">2주년 선물은 뭐가 좋을까요?</h1>
             </div>
 
             <div className="modal-body p-5 pt-0">
               <p className="text-left mb-0">
-                본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문
+                여자친구랑 곧 2주년인데 어떤 선물이 좋을까요? 여자친구의 취미는 서핑보드입니다.
               </p>
               <hr className="my-4" />
               {commentData.map((item) => (

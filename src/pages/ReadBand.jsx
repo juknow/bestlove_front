@@ -12,13 +12,11 @@ export default function ReadBand() {
         <div className="modal-dialog" role="document">
           <div className="modal-content rounded-4 shadow">
             <div className="modal-header p-5 pb-4 border-b-0">
-              <h1 className="font-bold mb-0 text-2xl">밴드 제목</h1>
+              <h1 className="font-bold mb-0 text-2xl">내일은 등산왕</h1>
             </div>
 
             <div className="modal-body p-5 pt-0">
-              <p className="text-left mb-0">
-                본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문본문
-              </p>
+              <p className="text-left mb-0">등산을 좋아하는 20대 커플들 밴드입니다. 함께해요.</p>
               <hr className="my-4" />
               <FriendCard />
 
